@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LogIn.RegistroControlador">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="registroBoton" layoutX="274.0" layoutY="341.0" mnemonicParsing="false" onAction="#registrarOnAction" onDragDetected="#registrarOnAction" prefHeight="25.0" prefWidth="152.0" text="Registrar" />
+            <Button fx:id="salir" layoutX="274.0" layoutY="420.0" mnemonicParsing="false" onAction="#salirRegistroOnAction" onDragDetected="#salirRegistroOnAction" prefHeight="25.0" prefWidth="151.0" text="Salir" />
+            <Label layoutX="34.0" layoutY="197.0" text="Nombre de Usuario" />
+            <Label layoutX="56.0" layoutY="261.0" text="Contraseña" />
+            <TextField fx:id="nuevoUsuario" layoutX="201.0" layoutY="193.0" prefHeight="25.0" prefWidth="198.0" />
+            <PasswordField fx:id="contra" layoutX="203.0" layoutY="257.0" prefHeight="25.0" prefWidth="196.0" />
+            <ImageView fitHeight="133.0" fitWidth="200.0" layoutX="128.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@man-362150_1920.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
